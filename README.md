@@ -1,2 +1,2 @@
 # futura-ai-gtsm
-Repository for the work under the EU FUTURA project
+This repository provides the development for the work under the EU FUTURA project. 
