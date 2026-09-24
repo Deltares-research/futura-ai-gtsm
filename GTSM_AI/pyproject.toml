@@ -7,16 +7,27 @@ name = "gtsm_ai"
 version = "0.1.0"
 description = "AI model development for the FUTURA GTSM project"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11, <3.14"
 dependencies = [
     "numpy",
+    "xarray",
+    "ipykernel",
+    "matplotlib",
+    "tqdm"
 ]
+
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["linux-64", "win-64"]
 
 [project.optional-dependencies]
 dev = [
     "pytest",
     "pytest-cov",
 ]
+
+[tool.pixi.pypi-dependencies]
+cht_cyclones = ">= 2.0.0"
 
 [tool.setuptools.packages.find]
 where = ["src"]
